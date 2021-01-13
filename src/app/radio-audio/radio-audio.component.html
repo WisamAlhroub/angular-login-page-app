@@ -1,0 +1,66 @@
+<div class="container">
+    <h1>Palestine Radio Stations</h1>
+    <hr>
+</div>
+<div class="container">
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hebron-stations" aria-expanded="false" aria-controls="hebron-stations">
+            Hebron Radios
+        </button>
+    </p>
+    <div class="collapse" id="hebron-stations">
+        <div class="card card-body">
+            <h2>Radio AlHurriyah</h2>
+            <audio controls [src]="radioData['Hebron']['hurriyah']"></audio>
+            <hr>
+            <h2>Radio Marah</h2>
+            <audio controls [src]="radioData['Hebron']['marah']"></audio>
+            <hr>
+            <h2>Radio AlRabiah</h2>
+            <audio controls [src]="radioData['Hebron']['rabiah']"></audio>
+        </div>
+    </div>
+    <hr>
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#ramallah-stations" aria-expanded="false" aria-controls="ramallah-stations">
+            Ramallah Radios
+        </button>
+    </p>
+    <div class="collapse" id="ramallah-stations">
+        <div class="card card-body">
+            <h2>Radio RayaFM</h2>
+            <audio controls [src]="radioData['Ramallah']['raya']"></audio>
+            <hr>
+            <h2>Radio Ajyal</h2>
+            <audio controls [src]="radioData['Ramallah']['ajyal']"></audio>
+        </div>
+    </div>
+    <hr>
+    <p>
+        <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#nablus-stations" aria-expanded="false" aria-controls="nablus-stations">
+            Nablus Radios
+        </button>
+    </p>
+    <div class="collapse" id="nablus-stations">
+        <div class="card card-body">
+            <h2>Radio AlQuran AlKareem</h2>
+            <audio controls [src]="radioData['Nablus']['quranKarem']"></audio>
+            <hr>
+            <h2>Radio Sout AlNajjah</h2>
+            <audio controls [src]="radioData['Nablus']['soutAlnajah']"></audio>
+        </div>
+    </div>
+    <hr>
+    <p>
+        <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#qalqeliyah-stations" aria-expanded="false" aria-controls="qalqeliyah-stations">
+            Qalqeliyah Radios
+        </button>
+    </p>
+    <div class="collapse" id="qalqeliyah-stations">
+        <div class="card card-body">
+            <h2>Radio Marah</h2>
+            <audio controls [src]="radioData['Qalqeliyah']['nagham']"></audio>
+        </div>
+    </div>
+    <hr>
+</div>
